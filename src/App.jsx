@@ -6,7 +6,7 @@ import Register from './pages/Register';
 import Settings from './pages/Settings';
 import Admin from './pages/Admin';
 import './index.css';
-import Navbar from './components/NavBar';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
