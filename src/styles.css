@@ -1,0 +1,46 @@
+/* src/styles.css */
+.App {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;width: 500px;
+    margin-left: 28%;
+    background-color: blue;
+    outline: none;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.issuesLi{
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 60vw;
+    margin-left: 10%;
+}
+.navLi{
+    padding: 10px;
+    border: 1px solid #ccc;
+}

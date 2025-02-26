@@ -1,0 +1,295 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+/* Body Styling */
+body {
+  background-image: url(./assets/fixMyStreet3.jpeg);
+  font-family: 'Poppins', sans-serif;
+  background-size: cover;
+  color: #ffd700; /* Golden text color */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* App Container */
+.App {
+  background: rgba(40, 40, 40, 0.8); /* Dark semi-transparent background */
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 1200px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(50, 50, 50, 0.8); /* Dark semi-transparent background */
+  border-radius: 15px;
+  margin-bottom: 20px;
+  animation: slideInDown 0.8s ease-in-out;
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-brand a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff6f61; /* Coral color */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-brand a:hover {
+  color: #ff3b2f; /* Darker coral color */
+  transform: scale(1.05);
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: #00bcd4; /* Cyan color */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ff6f61; /* Coral color */
+  transform: translateY(-2px);
+}
+
+/* Page Styling */
+.home-page,
+.auth-page,
+.settings-page,
+.admin-page {
+  text-align: center;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.auth-page form,
+.settings-page form {
+  background: rgba(50, 50, 50, 0.8); /* Dark semi-transparent background */
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 400px;
+  animation: zoomIn 0.8s ease-in-out;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.auth-page input,
+.settings-page input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  background: rgba(70, 70, 70, 0.8); /* Darker semi-transparent background */
+  color: #ffd700; /* Golden text color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-page input:focus,
+.settings-page input:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(255, 111, 97, 0.7); /* Coral glow */
+  outline: none;
+}
+
+.auth-page button,
+.settings-page button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff6f61, #ff3b2f); /* Coral gradient */
+  color: #fff; /* White text for contrast */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 0px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-page button:hover,
+.settings-page button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 111, 97, 0.5); /* Coral shadow */
+}
+
+.auth-page button:active,
+.settings-page button:active {
+  transform: translateY(0);
+}
+
+.admin-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.admin-actions button {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple to blue gradient */
+  color: #fff; /* White text for contrast */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-actions button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(106, 17, 203, 0.5); /* Purple shadow */
+}
+
+.admin-actions button:active {
+  transform: translateY(0);
+}
+
+/* Issue Form Styling */
+.issue-form {
+  background: rgba(50, 50, 50, 0.8); /* Dark semi-transparent background */
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  animation: zoomIn 0.8s ease-in-out;
+}
+
+.issue-form input,
+.issue-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  background: rgba(70, 70, 70, 0.8); /* Darker semi-transparent background */
+  color: #ffd700; /* Golden text color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.issue-form input:focus,
+.issue-form textarea:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(255, 111, 97, 0.7); /* Coral glow */
+  outline: none;
+}
+
+.issue-form button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple to blue gradient */
+  color: #fff; /* White text for contrast */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.issue-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(106, 17, 203, 0.5); /* Purple shadow */
+}
+
+.issue-form button:active {
+  transform: translateY(0);
+}
+
+/* Issue List Styling */
+.issue-list {
+  list-style: none;
+  padding: 0;
+}
+
+.issue-list li {
+  background: rgba(50, 50, 50, 0.8); /* Dark semi-transparent background */
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  animation: fadeInUp 0.8s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.issue-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.issue-list h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ff6f61; /* Coral color */
+}
+
+.issue-list p {
+  font-size: 1rem;
+  color: #00bcd4; /* Cyan color */
+}
